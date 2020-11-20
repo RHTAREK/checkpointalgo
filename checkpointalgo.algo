@@ -1,0 +1,36 @@
+ALGORITHM checkpointalgo1
+VAR nmbc,nmbm,nmbv,i : INTEGER ; 
+s : STRING ;set_declarations
+
+BEGIN
+   nmbc :=0;
+   nmbm :=1;
+   nmbv :=0;
+   i := 0 ;
+   write ("ecrire ...");
+   read (s);
+   WHILE (s[i]<>".") DO
+  if (s[i]==" ")
+  then {
+     nmbc := nmbc +1;
+     nmbm := nmbm + 1;}
+     else {
+        nmbc := nmbc +1 
+        if 
+           ((s[i]=='a') or (s[i]=='e') or (s[i]=='y') or (s[i]=='u') or (s[i]=='i') or (s[i]=='o'))
+           then{nmbv := nmbv + 1 ;} END_IF
+        }END_IF
+   i := i+1     
+   END_WHILE
+
+
+
+
+
+
+
+
+
+
+
+END
